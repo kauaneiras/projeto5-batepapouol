@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>batepapouol</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"rel="stylesheet">
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <!-- TELA LOGIN -->
+    <div class="login" id="login">
+        <div class="logo-login"> <img src="img/logo.png" alt="logo" width="130px" height="92px"></div>
+        <div class="putyourname">    
+            <input type="text" placeholder="digite seu nome de usuario" data-identifier="username">
+            <button onclick="login()" id="botao-login">Entrar</button>
+            <h1 class="hidde">Ocorreu algum erro. Talvez já exista alguém com esse nome</h1>
+        </div>
+        
+    </div>
+    <!-- TELA CARREGAMENTO -->
+
+    <!--<div class="loading">
+        <img src="img/carregando.gif" alt="carregando">
+        <h1>CARREGANDO...</h1>
+    </div> -->
+
+    <!-- TELA OPÇÕES LATERAIS -->
+    <div class="menu hidde" onclick="closetoolbar(this)">
+        <div class="voidspace"></div>
+        <div class="toolbar">
+            <div class="choose">
+                <h1>Escolha um contato para enviar mensagem:</h1>
+            </div>
+            <div class="users">
+                <div class="option todos" data-identifier="participant">
+                    <ion-icon name="people" onclick="selectuser(this)"></ion-icon>
+                    <h1 onclick="selectuser(this)">Todos</h1>
+                    <div class="selected">
+                        <ion-icon name="checkmark-circle-outline"> </ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="visibility">
+                <div class="choose">
+                    <h1>Escolha a visibilidade:</h1>
+                </div>
+                <div class="option public" data-identifier="visibility">
+                    <ion-icon name="lock-open"></ion-icon>
+                    <h1>Público</h1>
+                    <div class="selected">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="option privated" data-identifier="visibility">
+                    <ion-icon name="lock-closed"></ion-icon>
+                    <h1>Reservadamente</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- TELA BATE PAPO -->
+    <header>
+        <img src="img/logo.png" alt="logo bate-papo uol">
+        <ion-icon name="people" onclick="opentoolbar()"></ion-icon>
+    </header>
+
+    <main>
+        <div class="messages" id="messages">
+        
+        </div>
+    </main>
+    <footer>
+        <input placeholder="Escreva aqui..." type="text">
+        <ion-icon onclick="sendmessage()" data-identifier="send-message" class="send" name="paper-plane-outline"></ion-icon>
+        <h1>Enviando para <span>Todos</span> <b>(público)</b></h1>
+    </footer>
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</html>

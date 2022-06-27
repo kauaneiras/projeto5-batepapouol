@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  word-break: break-word;
+}
+/*LOGIN*/
+.login {
+  height: 100vh;
+  min-height: 100vh;
+  background-color: #fff;
+  background-image: url(http://www.transparenttextures.com/patterns/diagmonds-light.png);  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.logo-login {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 94px;
+  margin-top: 75px;
+}
+
+.putyourname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.login  input {
+  width: 261px;
+  height: 54px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  border: solid 1px #D7D7D7;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.login button {
+  width: 109px;
+  height: 45px;
+  font-size: 18px;
+  line-height: 25px;
+  border: solid 1px #E7E7E7;
+  border-radius: 9px;
+  color: #696969;
+}
+
+.login button:hover {
+  cursor: pointer;
+  background-color:  black;
+  font-weight: 300;
+  color: #fff;
+}
+
+.putyourname h1 {
+  width: 230px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: palevioletred;
+  margin-top: 30px;
+}
+/*LOADING*/
+.loading{
+  display: flex;
+  height: 100vh;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 4;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  background-image: url(http://www.transparenttextures.com/patterns/diagmonds-light.png);  width: 100vw;
+}
+.loading img{
+  height: 200px;
+}
+.loading h1{
+  font-size: 20px;
+  color: pink;
+  font-weight: bold;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*MENU LATERAL COM OPÇÕES*/
+.selected {
+  width: 18px;
+  height: 20px;
+  right: 25px;
+  position: absolute;
+  left: 210px;
+} 
+
+.selected ion-icon{
+  color: darkgreen;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  transition: step-start;
+}
+.voidspace {
+  width: calc(100vw - 260px);
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+.toolbar {
+  background-color: #fff;
+  width: 259px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+}
+
+.choose {
+  width: auto;
+  height: 84px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 35px;
+}
+
+ .users {
+  max-height: 70%;
+  overflow-y: auto;
+}
+
+.toolbar ion-icon {
+  min-width: 25px;
+  font-size: 25px;
+  margin-right: 8px;
+}
+.visibility ion-icon {
+  font-size: 22px
+}
+.visibility .choose {
+  height: 66px;
+  justify-content: center;
+}
+.visibility {
+  margin-bottom: 20px;
+}
+
+.public{
+  max-width: 210px;
+  min-width: 210px;
+  min-height: 36px;
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 16px;
+}
+.privated{
+  max-width: 210px;
+  min-width: 210px;
+  min-height: 36px;
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 16px;
+}
+/*---------------------------------------------------------------------------------*/
+
+/*PAGINA DE MENSAGENS*/
+header {
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  padding: 22px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.10);
+  background-color: #fff;
+  color: #000;
+  font-size: 45px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 160px);
+  margin: 80px 0 80px;
+  overflow: auto;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  padding: 16px;
+  background-color: #fff;
+  color: #000000;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+}
+
+footer ion-icon {
+  position: absolute;
+  z-index: 2;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 26px;
+  top: 26px;
+  right: 16px;
+}
+
+header img {
+  width: 75px;
+  height: 53px;
+}
+
+footer input::placeholder {
+  font-style: italic;
+  color: #000000;
+}
+
+footer h1 {
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+footer input {
+  border: none;
+  max-width: 80%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.message {
+  max-width: 100vw;
+  min-height: 40px;
+  padding: 8px;
+  margin-bottom: 4px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 16px;
+  box-shadow: 4px 4px 4px rgba(196, 195, 195, 0.5);
+
+}
+
+.messages {
+  margin: 26px 0 5px;
+}
+
+.option {
+  width: auto;
+  max-width: 210px;
+  min-width: 210px;
+  min-height: 36px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 17px;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*ESCONDER COISAS*/
+.hidde {
+  visibility: hidden;
+  display: none;
+}
+/*MENSAGENS*/
+
+.hour{
+  color: #AAAAAA;
+}
+.from{
+  color: black;
+  font-weight: 500;
+}
+.text{
+  color: black;
+  font-weight: normal;
+}
+.choose h1{
+  font-size: 18px;
+  font-weight: 700;
+}
